@@ -5,6 +5,11 @@ body {
   margin: 0;
 }
 
+.padded-div {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 section {
   padding: 15px;
 }
@@ -81,9 +86,6 @@ p {
 }
 
 .love-working-here-quote p {
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
   margin-top: 60px;
   color: #c3c3c3;
   padding: 5px;
@@ -101,20 +103,19 @@ p {
 }
 
 .company-logo img {
-  width: 400px;
+  width: 80%;
+  max-width: 400px;
   height: auto;
 }
 
 .school img {
   width: auto;
-  height: 150px;
+  height: 80%;
+  max-height: 150px;
 }
 
 .contact-me-hr {
   margin: 0 5px;
-  /* width: 100%; */
-  /* height: 4px; */
-  /* border-top: 4px solid #ebecee; */
   border: 2px solid #ebecee;
 }
 
@@ -124,29 +125,68 @@ h2 {
 }
 
 .contact-icons {
-  /* position: absolute;
-  bottom: 20%; */
   display: flex;
   justify-content: space-between;
-  
-  /* align-items: flex-end; */
 }
 
 .contact-icons a {
   text-decoration: none;
 }
 
-.contact-icon {
+/* .contact-icon {
   color: var(--my-white);
-  /* text-align: center; */
   transition: 0.5s;
 }
 
 .contact-icon:hover {
   color: var(--my-blue);
-} 
+}  */
 
-/* a::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-} */
+@media only screen and (min-width: 750px) {
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .main-p {
+    font-size: 22px;
+  }
+
+  .sub-p {
+    font-size: 18px;
+  }
+
+  #camera-guy, #devices, #department-flow {
+    width: 300px;
+    height: auto;
+  }
+
+  #camera-guy {
+    float: left;
+    clear: both;
+  }
+
+  .who-i-am-content {
+
+  }
+
+  #devices {
+    /* float: right; */
+    /* clear: none; */
+  }
+
+  #department-flow {
+    float: left;
+    clear: right;
+  }
+
+  .experience .padded-div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .experience {
+    text-align: center;
+    font-size: 30px;
+  }
+}
