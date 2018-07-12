@@ -86,7 +86,7 @@ p {
 }
 
 .love-working-here-quote p {
-  margin-top: 60px;
+  margin-top: 30%;
   color: #c3c3c3;
   padding: 5px;
 }
@@ -181,7 +181,7 @@ h2 {
     clear: right;
   }
 
-  .experience .padded-div {
+  .experience-education .padded-div {
     display: flex;
     justify-content: space-between;
   }
