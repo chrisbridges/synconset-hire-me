@@ -127,6 +127,7 @@ h2 {
 .contact-icons {
   display: flex;
   justify-content: space-between;
+  color: #7a7a77;
 }
 
 .contact-icons a {
